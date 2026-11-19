@@ -162,15 +162,9 @@ header {
   display: block;
   width: 158px;
   aspect-ratio: 816 / 160;
-  background: currentColor;
-  -webkit-mask-image: url("../assets/Velora Logo 2.png");
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-image: url("../assets/Velora Logo 2.png");
-  mask-position: center;
-  mask-size: contain;
-  mask-repeat: no-repeat;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(16%) saturate(1929%)
+    hue-rotate(124deg) brightness(94%) contrast(88%);
 }
 .logo-caption {
   margin-top: 5px;
@@ -185,6 +179,9 @@ header {
 }
 .logo-light {
   color: white;
+}
+.logo-light .logo-image {
+  filter: brightness(0) invert(1);
 }
 .logo-light .logo-caption {
   color: #a8c8c2;

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import veloraLogo from "../assets/Velora Logo 2.png";
 
 type Page = "home" | "products" | "about" | "contact";
 type Product = {
@@ -198,7 +199,7 @@ function Logo({ light = false }: { light?: boolean }) {
       onClick={() => window.dispatchEvent(new CustomEvent("velora-nav", { detail: "home" }))}
       aria-label="Velora home"
     >
-      <span className="logo-image" aria-hidden="true" />
+      <img className="logo-image" src={veloraLogo} alt="Velora" />
       <span className="logo-caption">Creative Gallery</span>
     </button>
   );
