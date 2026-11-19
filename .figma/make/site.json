@@ -1,0 +1,10 @@
+{
+  "description": "Explore Velora’s curated gifts, trophies, mementos, and personalised creations, then contact the boutique on WhatsApp for custom enquiries.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
