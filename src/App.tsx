@@ -10,7 +10,7 @@ type Product = {
   material: string;
 };
 
-const WA_NUMBER = "919876543210";
+const WA_NUMBER = "999999999999";
 const waLink = (message = "Hello Velora! I would like to know more about your gifts.") =>
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
 
